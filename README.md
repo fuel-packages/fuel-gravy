@@ -15,7 +15,7 @@ and then you can simply type in:
 
 # Usage
 
-There are to ways to retrieve a gravatar. 
+There are two ways to retrieve a gravatar. 
 
 By email:
 
