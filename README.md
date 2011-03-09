@@ -11,4 +11,16 @@ to install this package simply add this source to your package configuration fil
 
 and then you can simply type in:
 
-	oil package install gravy
+	php oil package install gravy
+
+# Usage
+
+There are to ways to retrieve a gravatar. 
+
+By email:
+
+	Gravy::from_email('');
+
+By hash:
+
+	Gravy::from_hash('');
