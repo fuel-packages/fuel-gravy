@@ -8,7 +8,7 @@ class Gravy {
 	public static function from_email($email, $size = 50, $rating = 'g', $url_only = FALSE)
 	{
 		 $base_url 	= '//www.gravatar.com/avatar/';
-		 $email		= empty($email) ? '3b3be63a4c2a439b013787725dfce802' : md5($email);
+		 $email		= empty($email) ? '54bf10ec8f553d3a3c2264ad37273b3e' : md5($email);
 		 $size		= '?s=' . $size;
 		 $rating	= '&amp;r=' . $rating;
 
