@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @package    Gravy
+ * @version    1.0
+ * @author     Ryan Foster
+ * @link       http://github.com/rfosta/gravy
+ */
 
 namespace Gravy;
 
