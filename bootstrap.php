@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Nifty Port
+ * Gravy
  *
- * This is a port of Ryan Bates nifty generators for Rails.
+ *Gravatar Helper for FuelPHP
  *
- * @package    Nifty Port
- * @version    0.1 Beta
+ * @package    Gravy
+ * @version    1.0
  * @author     Ryan Foster
- * @link       http://github.com/rfosta/nifty-port
+ * @link       http://github.com/rfosta/gravy
  */
 
 Autoloader::add_core_namespace('Gravy');
