@@ -5,11 +5,7 @@ You can add gravatars to your project with just one line of code.
 
 # Install
 
-to install this package simply add this source to your package configuration file:
-
-	http://github.com/rfosta
-
-and then you can simply type in:
+to install this package simply type this:
 
 	php oil package install gravy
 
