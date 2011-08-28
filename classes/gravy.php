@@ -11,26 +11,23 @@ namespace Gravy;
 
 class Gravy {
 	
-	public static function from_email($email, $size = 50, $rating = 'g', $url_only = FALSE)
+	public static function from_email($email, $size = 50, $rating = 'g', $default = null, $url_only = FALSE)
 	{
-		 return self::from_hash(md5($email), $size, $rating, $url_only);
+		 return self::from_hash(md5($email), $size, $rating, $default, $url_only);
 	}
 
-	public static function from_hash($hash, $size = 50, $rating = 'g', $url_only = FALSE)
+	public static function from_hash($hash, $size = 50, $rating = 'g', $default = null, $url_only = FALSE)
 	{
 		 $base_url 	= '//www.gravatar.com/avatar/';
 		 $hash = empty($hash) ? '' : $hash;
 		 $size = '?s=' . $size;
-		 $rating = '$amp;r=' . $rating;
+		 $rating = '&amp;r=' . $rating;
+		 $default = is_null($default) ? '' : '&amp;d='.$default;	 
 		 
-		 if ($url_only == TRUE)
+		 $gravatar = $base_url . $hash . $size . $rating . $default;
+		 if ($url_only != TRUE)
 		 {
-		 	$gravatar = $base_url . $hash . $size . $rating;
-		 }
-		 else
-		 {
-		 	$url = $base_url . $hash . $size . $rating;
-		 	$gravatar = "<img src='$url' alt='gravatar' class='gravy' />";
+		 	$gravatar = "<img src='$gravatar' alt='gravatar' class='gravy' />";
 		 }
 
 		 return $gravatar;
