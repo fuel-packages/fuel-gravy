@@ -13,7 +13,7 @@ class Gravy {
 	
 	public static function from_email($email, $size = 50, $rating = 'g', $default = null, $url_only = FALSE)
 	{
-		 return self::from_hash(md5($email), $size, $rating, $url_only);
+		 return self::from_hash(md5($email), $size, $rating, $default, $url_only);
 	}
 
 	public static function from_hash($hash, $size = 50, $rating = 'g', $default = null, $url_only = FALSE)
