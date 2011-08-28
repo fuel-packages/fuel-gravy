@@ -21,8 +21,8 @@ class Gravy {
 		 $base_url 	= '//www.gravatar.com/avatar/';
 		 $hash = empty($hash) ? '' : $hash;
 		 $size = '?s=' . $size;
-		 $rating = '$amp;r=' . $rating;
-		 $default = is_null($default) ? '' : 'd='.$default;	 
+		 $rating = '&amp;r=' . $rating;
+		 $default = is_null($default) ? '' : '&amp;d='.$default;	 
 		 
 		 $gravatar = $base_url . $hash . $size . $rating . $default;
 		 if ($url_only != TRUE)
